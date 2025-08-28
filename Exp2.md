@@ -13,15 +13,36 @@ Algorithm:
  
 Program:
 
-//type your code here
 
-
-
+```c
+#include <stdio.h>
+struct numbers 
+{
+    int a, b;
+};
+struct numbers add(struct numbers n) 
+{
+    struct numbers result;
+    result.a = n.a + n.b;   
+    result.b = 0;          
+    return result;
+}
+int main() 
+{
+    struct numbers n, res;
+    printf("Enter value for a: ");
+    scanf("%d", &n.a);
+    printf("Enter value for b: ");
+    scanf("%d", &n.b);
+    res = add(n);
+    printf("\nResult (a + b): %d\n", res.a);
+    return 0;
+}
+```
 
 Output:
 
-//paste your output screenshots here
-
+![alt text](image-1.png)
 
 
 
